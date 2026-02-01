@@ -11,6 +11,8 @@ const int CAPACIDAD_MAXIMA = 5;
     string nombres[CAPACIDAD_MAXIMA] = {"Ana", "Carlos", "Maria"};
     bool seguirEjecutando = true;
     int indiceMejor = encontrarMejorEstudiante(calificaciones, cantidadActual);
+    int indiceMenor = encontrarMenorEstudiante(calificaciones, cantidadActual);
+
     while (seguirEjecutando) {
         mostrarMenu();
         int opcionSeleccionada;
@@ -44,7 +46,23 @@ const int CAPACIDAD_MAXIMA = 5;
             case 4:
                 imprimirListaEstudiantes(calificaciones, nombres, cantidadActual);
                 break;
+
             case 5:
+                cout << "Estuiante con Menor promedio: "
+                <<nombres[indiceMenor]<< " - " << calificaciones[indiceMenor] << endl;
+                break;
+
+            case 6:
+                ordenarEstudiante(nombres, calificaciones, cantidadActual);
+                cout << "\n --- Estudiantes ordenados de mayor a menor ---" << endl;
+                for (int i = 0; i < cantidadActual; i++) {
+                    cout << i + 1 << " . " << nombres[i] << " . " << calificaciones [i] << endl;
+                }
+                break;
+
+
+
+            case 7:
                 if (cantidadActual < CAPACIDAD_MAXIMA) {
                     cout << "Nombre: " << endl;
                     cin.ignore();

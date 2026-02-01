@@ -20,4 +20,9 @@ int encontrarMejorEstudiante(const int* ptrCalificaciones, int cantidadEstudiant
 
 void imprimirListaEstudiantes(const int* ptrCalificaciones, const string* ptrNombre, int cantidadEstudiantes);
 
+int encontrarMenorEstudiante(const int* ptrCalificaciones, int cantidadEstudiantes);
+
+void ordenarEstudiante(string* ptrNombres, int* ptrCalificaciones, int cantidadEstudiantes);
+
+
 #endif //EJERCICIOCLASE_FUNCIOES_H

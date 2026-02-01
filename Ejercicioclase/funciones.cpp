@@ -9,7 +9,8 @@ void mostrarMenu() {
     //salida de datos con cout
 
     cout  <<"\n1. Promedio\n2.Modificar\n3. Mejor Estudiante\n";
-    cout << "4. Imprimir Estudiante \n5. Agregar\n0. Salir\nOpicon:";
+    cout << "4. Imprimir Estudiante \n 5.Menor promedio\n";
+    cout << "6. Estudiantes Ordenanos \n 7. Agregar\n0. Salir\nOpicon:";
 
 
 
@@ -45,4 +46,30 @@ void imprimirListaEstudiantes(const int* ptrCalificaciones,  const string *ptrNo
         cout << (i+1) <<"." << ptrNombres[i] << "." << ptrCalificaciones[i] << endl;
     }
 
+}
+
+int encontrarMenorEstudiante(const int* ptrCalificaciones, int cantidadEstudiantes) {
+    int indiceMenor = 0;
+    for (int i = 0; i < cantidadEstudiantes; i++) {
+        if (*(ptrCalificaciones + i) < *(ptrCalificaciones + indiceMenor)) {
+            indiceMenor = i;
+        }
+    }
+    return indiceMenor;
+}
+
+void ordenarEstudiante( string* ptrNombres, int* ptrCalificaciones, int cantidadEstudiantes) {
+    for (int i = 0; i < cantidadEstudiantes - 1; i++) {
+        for (int j = 0; j < cantidadEstudiantes - i - 1; j++) {
+            if (*(ptrCalificaciones + j) < *(ptrCalificaciones + j + 1)) {
+                int tempCal = *(ptrCalificaciones + j);
+                *(ptrCalificaciones + j ) = *(ptrCalificaciones + j + 1);
+                *(ptrCalificaciones + j + 1) = tempCal;
+
+                string tempNom = *(ptrNombres + j);
+                *(ptrNombres + j) = *(ptrNombres + j + 1);
+                *(ptrNombres + j + 1) = tempNom;
+            }
+        }
+    }
 }
