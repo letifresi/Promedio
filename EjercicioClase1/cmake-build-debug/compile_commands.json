@@ -1,8 +1,0 @@
-[
-{
-  "directory": "C:/Users/User/CLionProjects/untitled2/cmake-build-debug",
-  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\untitled2.dir\\main.cpp.obj -c C:\\Users\\User\\CLionProjects\\untitled2\\main.cpp",
-  "file": "C:/Users/User/CLionProjects/untitled2/main.cpp",
-  "output": "C:/Users/User/CLionProjects/untitled2/cmake-build-debug/CMakeFiles/untitled2.dir/main.cpp.obj"
-}
-]
