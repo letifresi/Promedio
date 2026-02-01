@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/User/CLionProjects/Ejercicioclase/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\Ejercicioclase.dir\\main.cpp.obj -c C:\\Users\\User\\CLionProjects\\Ejercicioclase\\main.cpp",
+  "file": "C:/Users/User/CLionProjects/Ejercicioclase/main.cpp",
+  "output": "C:/Users/User/CLionProjects/Ejercicioclase/cmake-build-debug/CMakeFiles/Ejercicioclase.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/User/CLionProjects/Ejercicioclase/cmake-build-debug",
+  "command": "C:\\PROGRA~1\\JETBRA~1\\CLION2~1.2\\bin\\mingw\\bin\\G__~1.EXE -g -std=gnu++20 -fdiagnostics-color=always -o CMakeFiles\\Ejercicioclase.dir\\funciones.cpp.obj -c C:\\Users\\User\\CLionProjects\\Ejercicioclase\\funciones.cpp",
+  "file": "C:/Users/User/CLionProjects/Ejercicioclase/funciones.cpp",
+  "output": "C:/Users/User/CLionProjects/Ejercicioclase/cmake-build-debug/CMakeFiles/Ejercicioclase.dir/funciones.cpp.obj"
+}
+]
